@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Container from "./Container";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+// import { AiOutlineShoppingCart } from "react-icons/ai";
+import { ShoppingCart } from "lucide-react"
 
 export default function Hero() {
   return (
@@ -13,7 +14,7 @@ export default function Hero() {
               <div className="font-bold text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs text-black dark:text-white bg-secondary/60 p-4 rounded-lg">
                 Feactured Products
                 <Button size="lg" className="w-full py-6 text-xl">
-                  <AiOutlineShoppingCart className="mr-2" />
+                  <ShoppingCart className="mr-2" />
                   Show Now
                 </Button>
               </div>

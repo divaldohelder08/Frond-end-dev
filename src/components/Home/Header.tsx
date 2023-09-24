@@ -1,5 +1,4 @@
-import { CgMenu } from "react-icons/cg";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { ShoppingCart,Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Container from "./Container";
 import { ModeToggle } from "../Mode";
@@ -27,7 +26,7 @@ export default function Header() {
           <div className="flex items-center">
             <Sheet >
               <SheetTrigger>
-                <CgMenu className="h-6 md:hidden w-6" />
+                <Menu className="h-6 md:hidden w-6" />
               </SheetTrigger>
               <SheetContent side={"left"} className="w-[300px] sm:w-[400px]">
                 <nav className="flex flex-col gap-4">
@@ -65,7 +64,7 @@ export default function Header() {
               size="icon"
               aria-label="Toggle Theme"
             >
-              <AiOutlineShoppingCart size={20} />
+              <ShoppingCart size={20} />
               <span className="sr-only">
                 Shopping Cart
               </span>
