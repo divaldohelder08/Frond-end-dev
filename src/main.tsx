@@ -1,15 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import '@/index.css'
-import { ThemeProvider } from '@/components/theme-provider'
-import MyForm from './routes'
-// import Home from './page/Home'
+import { ThemeProvider } from "@/components/theme-provider";
+import "@/index.css";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import QR from "./refactoring/QR";
+// import Routes from "./Routes";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      {/* <Index /> */}
-      <MyForm />
+      {/* <Routes /> */}
+      <QR />
     </ThemeProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
